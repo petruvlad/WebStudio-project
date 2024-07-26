@@ -1,0 +1,53 @@
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: 2rem 1rem;
+  text-align: left;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: $primary-color;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    span {
+      color: black;
+    }
+  }
+
+  &__address,
+  &__list {
+    margin: 1rem 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list-item a {
+    color: $footer-link-color;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+
+    &:hover,
+    &:focus {
+      color: $footer-link-hover-color;
+    }
+  }
+
+  &__social-section {
+    text-align: right;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $footer-text-color;
+    }
+  }
+}

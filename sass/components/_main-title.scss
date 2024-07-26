@@ -1,0 +1,11 @@
+.main-title {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: $secondary-color;
+  color: #fff;
+
+  &__heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}

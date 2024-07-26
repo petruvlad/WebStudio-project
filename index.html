@@ -3,125 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Web Studio offers effective solutions for your business with attention to detail, punctuality, and the use of modern technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Web Studio</title>
 </head>
 <body>
-    <header>
-        <a href="#home">Web <span>Studio</span></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#studio">Studio</a>
-                </li>
-                <li>
-                    <a href="portofolio.html">Portofolio</a>
-                </li>
-                <li>
-                    <a href="#Contacts">Contacts</a>
-                </li>
-            </ul> 
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+12127724150">+1 212-772-4150</a>
-                </li>
-            </ul>       
+    <header class="header" role="banner">
+        <a class="header__logo" href="index.html" aria-label="Web Studio Home">Web<span>Studio</span></a>
+        <nav class="header__navigation" role="navigation">
+            <ul class="header__navigation-links">
+                <li class="header__navigation-link"><a href="index.html" title="Studio">Studio</a></li>
+                <li class="header__navigation-link"><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li class="header__navigation-link"><a href="#contacts" title="Contacts">Contacts</a></li>
+            </ul>
+            <ul class="header__navigation-contacts">
+                <li class="header__navigation-tel"><a href="mailto:info@devstudio.com" aria-label="Email us at info@devstudio.com" title="Email us at info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header__navigation-email"><a href="tel:+12127724150" aria-label="Call us at +1 212-772-4150" title="Call us at +1 212-772-4150">+1 212-772-4150</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-            <button>Request our service</button>
+        <section class="main-title">
+            <h1 class="main-title__heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+            <button class="button" aria-label="Request our service">Request our service</button>
         </section>
-        <section>
-            <ul>
-                <li>
+        <section class="section section--values">
+            <ul class="section__list section__list--values">
+                <li class="section__list-item">
+                    <img src="./img/icons/Group1.svg" alt="Attention to Details Icon">
                     <h3>ATTENTION TO DETAILS</h3>
-            <p>
-                We go into all the details and processes of your business to develop a customized solution.
-            </p>
+                    <p>We go into all the details and processes of your business to develop a customized solution.</p>
                 </li>
-                <li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Group2.svg" alt="Punctuality Icon">
                     <h3>PUNCTUALITY</h3>
-                    <p>
-                        With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.
-                    </p>
+                    <p>With us, you can feel safe and secure. An important principle of the company: respect your time and deadlines.</p>
                 </li>
-                <li>
-                    <h3>
-                        PLANNING
-                    </h3>
-                    <p>
-                        You will be able to observe and participate in every phase of solution development and implementation.
-                    </p>
+                <li class="section__list-item">
+                    <img src="./img/icons/Group3.svg" alt="Planning Icon">
+                    <h3>PLANNING</h3>
+                    <p>You will be able to observe and participate in every phase of solution development and implementation.</p>
                 </li>
-                <li>
-                    <h3>
-                        MODERN TECHNOLOGIES
-                    </h3>
-                    <p>
-                        We use innovative tools to solve assigned tasks. It's time to simplify work processes.
-                    </p>
+                <li class="section__list-item">
+                    <img src="./img/icons/Group4.svg" alt="Modern Technologies Icon">
+                    <h3>MODERN TECHNOLOGIES</h3>
+                    <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
                 </li>
             </ul>
-            
         </section>
-        <section>
+
+        <section class="section section--work">
             <h2>What we do</h2>
-            <ul>
-                <li>
-                    <img src="./img/box1.svg" alt="">
-                </li>
-                <li>
-                    <img src="./img/box2.svg" alt="">
-                </li>
-                <li>
-                    <img src="./img/box3.svg" alt="">
-                </li>
+            <ul class="section__list section__list--work">
+                <li class="section__list-item"><img src="./img/box1.svg" alt="Work 1 description" width="370" height="294"></li>
+                <li class="section__list-item"><img src="./img/box2.svg" alt="Work 2 description" width="370" height="294"></li>
+                <li class="section__list-item"><img src="./img/box3.svg" alt="Work 3 description" width="370" height="294"></li>
             </ul>
         </section>
-        <section>
+        <section class="section section--team">
             <h2>Our Team</h2>
-            <ul>
-                <li>
-                    <img src="./img/img1.svg" alt="">
+            <ul class="section__list section__list--team">
+                <li class="section__list-item">
+                    <img src="./img/img1.svg" alt="Christopher Walker" width="200" height="200">
                     <h3>Christopher Walker</h3>
                     <p>Product Designer</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Christopher Walker's Instagram"><svg><use href="./img/icons/symbol-defs.svg#icon-instagram"></use></svg></a>
+                        <a href="#" aria-label="Christopher Walker's Facebook"><svg><use href="./img/icons/symbol-defs.svg#icon-facebook"></use></svg></a>
+                        <a href="#" aria-label="Christopher Walker's Twitter"><svg><use href="./img/icons/symbol-defs.svg#icon-twitter"></use></svg></a>
+                        <a href="#" aria-label="Christopher Walker's LinkedIn"><svg><use href="./img/icons/symbol-defs.svg#icon-linkedin"></use></svg></a>
+                    </div>
                 </li>
-                <li>
-                    <img src="./img/img2.svg" alt="">
+                <li class="section__list-item">
+                    <img src="./img/img2.svg" alt="Kylie Evans" width="200" height="200">
                     <h3>Kylie Evans</h3>
                     <p>Frontend Developer</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Kylie Evans's Instagram"><svg><use href="./img/icons/symbol-defs.svg#icon-instagram"></use></svg></a>
+                        <a href="#" aria-label="Kylie Evans's Facebook"><svg><use href="./img/icons/symbol-defs.svg#icon-facebook"></use></svg></a>
+                        <a href="#" aria-label="Kylie Evans's Twitter"><svg><use href="./img/icons/symbol-defs.svg#icon-twitter"></use></svg></a>
+                        <a href="#" aria-label="Kylie Evans's LinkedIn"><svg><use href="./img/icons/symbol-defs.svg#icon-linkedin"></use></svg></a>
+                    </div>
                 </li>
-                <li>
-                    <img src="./img/img3.svg" alt="">
+                <li class="section__list-item">
+                    <img src="./img/img3.svg" alt="Ryan Harris" width="200" height="200">
                     <h3>Ryan Harris</h3>
-                    <p>Marketingr</p>
+                    <p>Marketing</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Ryan Harris's Instagram"><svg><use href="./img/icons/symbol-defs.svg#icon-instagram"></use></svg></a>
+                        <a href="#" aria-label="Ryan Harris's Facebook"><svg><use href="./img/icons/symbol-defs.svg#icon-facebook"></use></svg></a>
+                        <a href="#" aria-label="Ryan Harris's Twitter"><svg><use href="./img/icons/symbol-defs.svg#icon-twitter"></use></svg></a>
+                        <a href="#" aria-label="Ryan Harris's LinkedIn"><svg><use href="./img/icons/symbol-defs.svg#icon-linkedin"></use></svg></a>
+                    </div>
                 </li>
-                <li>
-                    <img src="./img/img4.svg" alt="">
+                <li class="section__list-item">
+                    <img src="./img/img4.svg" alt="Tyler Moore" width="200" height="200">
                     <h3>Tyler Moore</h3>
                     <p>UI Designer</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Tyler Moore's Instagram"><svg><use href="./img/icons/symbol-defs.svg#icon-instagram"></use></svg></a>
+                        <a href="#" aria-label="Tyler Moore's Facebook"><svg><use href="./img/icons/symbol-defs.svg#icon-facebook"></use></svg></a>
+                        <a href="#" aria-label="Tyler Moore's Twitter"><svg><use href="./img/icons/symbol-defs.svg#icon-twitter"></use></svg></a>
+                        <a href="#" aria-label="Tyler Moore's LinkedIn"><svg><use href="./img/icons/symbol-defs.svg#icon-linkedin"></use></svg></a>
+                    </div>
                 </li>
             </ul>
-
+        </section>
+        <section class="section section--clients">
+            <h2>Regular Customers</h2>
+            <ul class="section__list section__list--clients">
+                <li class="section__list-item">
+                    <img src="./img/icons/Client1.svg" alt="Client 1">
+                </li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Client2.svg" alt="Client 2">
+                </li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Client3.svg" alt="Client 3">
+                </li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Client4.svg" alt="Client 4">
+                </li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Client5.svg" alt="Client 5">
+                </li>
+                <li class="section__list-item">
+                    <img src="./img/icons/Client6.svg" alt="Client 6">
+                </li>
+            </ul>
         </section>
     </main>
-    <footer>
-         <a href="#home">Web <span>Studio</span></a>
-         <address>
+    <footer class="footer">
+        <a href="#home" class="footer__logo" aria-label="Web Studio Home">Web <span>Studio</span></a>
+        <address class="footer__address">
             695 Park Ave, NY 10065, USA
-         </address>
-          <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+12127724150">+1 212-772-4150</a>
-                </li>
-            </ul>       
+            <ul class="footer__contact-list">
+                <li class="footer__contact-item"><a href="mailto:info@devstudio.com" aria-label="Email us at info@devstudio.com" title="Email us at info@devstudio.com">info@devstudio.com</a></li>
+                <li class="footer__contact-item"><a href="tel:+12127724150" aria-label="Call us at +1 212-772-4150" title="Call us at +1 212-772-4150">+1 212-772-4150</a></li>
+            </ul>
+        </address>
+        <div class="footer__social-icons">
+            <h2 class="footer__social-heading">Find Us</h2>
+            <a href="#" aria-label="Web Studio Instagram">
+                <svg><use href="./img/icons/symbol-defs.svg#icon-instagram"></use></svg>
+            </a>
+            <a href="#" aria-label="Web Studio Facebook">
+                <svg><use href="./img/icons/symbol-defs.svg#icon-facebook"></use></svg>
+            </a>
+            <a href="#" aria-label="Web Studio Twitter">
+                <svg><use href="./img/icons/symbol-defs.svg#icon-twitter"></use></svg>
+            </a>
+            <a href="#" aria-label="Web Studio LinkedIn">
+                <svg><use href="./img/icons/symbol-defs.svg#icon-linkedin"></use></svg>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
